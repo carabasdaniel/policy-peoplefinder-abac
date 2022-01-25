@@ -16,13 +16,11 @@ jobs:
 
     - name: Read config
       id: config
-      uses: CumulusDS/get-yaml-paths-action@v0.1.1
+      uses: KJ002/read-yaml@1.5
       with:
-        file: .github/config.yaml
-        username: username
-        repo: repo
-        server: server
-
+        file: '.github/config.yaml'
+        key-path: '["username", "repo", "server"]'
+ 
     - name: List Sver Tags
       uses: aserto-dev/sver-action@v0.0.14
       id: "sver"
