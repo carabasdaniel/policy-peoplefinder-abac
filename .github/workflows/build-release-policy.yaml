@@ -19,7 +19,7 @@ jobs:
       uses: KJ002/read-yaml@1.5
       with:
         file: '.github/config.yaml'
-        key-path: '""'
+        key-path: '["username"]'
  
     - name: List Sver Tags
       uses: aserto-dev/sver-action@v0.0.14
