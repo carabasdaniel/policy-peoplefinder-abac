@@ -16,9 +16,13 @@ jobs:
 
     - name: Read config
       id: config
-      uses: KJ002/read-yaml@1.5
+      uses: carabasdaniel/get-yaml-paths-action@master
       with:
-        file: '.github/config.yaml'
+        file: ".github/config.yaml"
+        paths:
+          username: username
+          repo: repo
+          server: server
  
     - name: List Sver Tags
       uses: aserto-dev/sver-action@v0.0.14
