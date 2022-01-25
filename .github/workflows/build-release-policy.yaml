@@ -19,9 +19,6 @@ jobs:
       uses: CumulusDS/get-yaml-paths-action@v0.1.1
       with:
         file: .github/config.yaml
-        username: username
-        repo: repo
-        server: server
 
     - name: List Sver Tags
       uses: aserto-dev/sver-action@v0.0.14
